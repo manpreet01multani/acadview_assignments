@@ -5,15 +5,15 @@ print("hi I am manpreet")
 print("Acad"+"View")
 
 # 3. taking input printing its value
-#x = input("enter the value: ")
-#y = input("enter the value: ")
-#z = input("enter the value: ")
-#print("x is: "+x)
-#print("y is: "+y)
-#print("z is: "+z)
+x = input("enter the value: ")
+y = input("enter the value: ")
+z = input("enter the value: ")
+print("x is: "+x)
+print("y is: "+y)
+print("z is: "+z)
 
 # 4 print lets get started on screen
-#print('Let\'s get started')
+print('Let\'s get started')
 
 #print the following value using placeholders
 s= 'Acadview'

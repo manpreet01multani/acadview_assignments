@@ -52,23 +52,17 @@ for x in list:
 for x in list:
  print(x)
 
-# print prime number.
+# print even and odd numbers.
 
-def is_prime(n):
-    status=True
-    if n < 2:
-        status = False
+l=[]
+l1=[]
+for i in  range(1,101):
+    if i%2==0:
+      l.append(i)
     else:
-        for i in range(2,n):
-            if n%i==0:
-             status=False
-    return status
-for n in range(2,201):
-    if is_prime(n):
-        if n==197:
-            print(n)
-        else:
-            print(n,"")
+       l1.append(i)
+print(l)
+print(l1)
 
 # Arrange separate list  for integer, strings and float.
 

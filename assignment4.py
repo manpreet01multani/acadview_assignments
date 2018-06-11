@@ -61,3 +61,10 @@ l = [x for x in s]
 print(l)
 for x in l:
     print("count of %s is %d"%(x,l.count(x)))
+
+
+
+
+
+
+

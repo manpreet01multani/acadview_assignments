@@ -14,13 +14,6 @@ while True:
     if count == 7:
         break
 
-# create a list and square of it in another list
-
-integer = []
-
-for x in range(0,6):
-    print("enter the integer",integer)
-
 # create  a user defined dictionary
 
 dict = {}
@@ -36,4 +29,68 @@ for i in range(1, 5):
   for j in range(1, i+1):
     print("* ", end = " ")
   print()
+
+# Square of list integer.
+
+l = []
+for x in range(0,5):
+ l.append(int(input("enter the list elements: ")))
+ l1 = []
+for x in l:
+ l1.append(x*x)
+
+print(l)
+print(l1)
+
+# Select and remove element from list.
+
+list=[1,2,3,4,5]
+l= int(input("enter the value to delete"))
+for x in list:
+  if  x ==l:
+    list.remove(x)
+for x in list:
+ print(x)
+
+# print prime number.
+
+def is_prime(n):
+    status=True
+    if n < 2:
+        status = False
+    else:
+        for i in range(2,n):
+            if n%i==0:
+             status=False
+    return status
+for n in range(2,201):
+    if is_prime(n):
+        if n==197:
+            print(n)
+        else:
+            print(n,"")
+
+# Arrange separate list  for integer, strings and float.
+
+l = [1,2,'Ram', 4.5]
+intl=[]
+strl=[]
+floatl=[]
+for x in l:
+  if type(x)==int:
+    intl.append(x)
+  elif type(x)==str:
+    strl.append(x)
+  else:
+    floatl.append(x)
+print(intl)
+print(strl)
+print(floatl)
+
+
+
+
+
+
+
 

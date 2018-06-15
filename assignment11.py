@@ -10,8 +10,6 @@ def sleepMe():
 t = Thread(target=sleepMe, args=())
 t.start()
 
-
-
 # make a thread that prints number.
 
 import time

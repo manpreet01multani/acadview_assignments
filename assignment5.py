@@ -1,71 +1,63 @@
-#Take an input year from user and decide whether it is a leap year or not.
+# 1.Name and handle exception following condition:
+#It is ZeroDivisionError .
+a=3
+if a<4:
+ try:
+  a=a/(a-3)
+ except ZeroDivisionError:
+     print("value is not allowed")
 
-year = int(input("enter year: "))
+# 2.Name and handle exception following condition:
+# It is IndexError.
 
-if year % 4 == 0 and year % 100 != 0 :
-    print(year,"is a Leap year ")
-else:
-     print(year,"is not leap year :")
+l=[1,2,3]
+try:
+   print(l[3])
+except IndexError:
+    print("cannot find index")
 
-#check the dimensions are of square or rectangle.
+#3.what will be the out[ut of code:
+# An exception.
 
-l = int(input("enter the length:"))
-b = int(input("enter the breadth:"))
+#4.what will be the out[ut of code:
+#-5.0
+#a/b result in 0
 
-if l == b :
-    print("dimension of square: ")
-else:
-    print("dimension of rectangle")
-
-#determine oldest and youngest among them.
-
-print("enter first age:")
-first = input()
-print("enter second age:")
-second = input()
-print("enter third age:")
-third = input()
-
-if first > second and first > third:
-    print("oldest is",first)
-else:
-    print("youngest is",first)
-if second > first and second > first:
-    print("oldest is",second)
-else:
-    print("youngest is",second)
-if third > first and third > first:
-    print("oldest is",third)
-
-#a competitor know which of these prizes they won based on the number of points they scored
-
-num = int(input("insert a number"))
-
-if num > 51 and num <= 150:
-    print("congratulations! you won wooden dog")
-elif num > 151 and num <= 180:
-    print("congratulation! you won book")
-elif num >181 and num <= 200:
-      print("congratulations! you won chocolates")
-else:
-    print("no any prize")
-
-#print total cost after getting discount.
-
-quantity = int(input("enter quantity "))
-
-if quantity*100 > 1000:
-    discount = (0.1*quantity*100)
-    print("getting discount")
-    cost = (quantity*100) - (0.1*quantity*100)
-    print("total cost",cost)
-else:
-    print("No discount")
+#5. Try excetion handling(import,value and index).
 
 
+l=[1,2,3]
+try:
+     print(l[3])
+except ImportError:
+    print("file not open")
+except ValueError:
+    print("value is wrong")
+except IndexError:
+    print("index is incorrect")
 
+#6.Create a user-defined exception AgeTooSmallError() that warns the user when they entered age less than 18
+class Error(Exception):
+    pass
+class  ValueTooSmallError(Error):
+    pass
+class ValueTooLarge(Error):
+    pass
 
-
-
-
+age=18
+while True:
+  try:
+      num=int(input("enter the number"))
+      if age>num:
+        raise ValueTooSmallError
+      elif age<num:
+         raise ValueTooLarge
+      break
+  except ValueTooSmallError:
+    print("value is small,repeat")
+    print()
+  except ValueTooLarge:
+    print("value is greater,repeat")
+    print()
+print("you got it")
 

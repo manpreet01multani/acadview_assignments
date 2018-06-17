@@ -1,13 +1,17 @@
-3
-5
-8
-2
-7
-4
-2
-6
-4
-2
+
+#3.
+import re
+s="Betty bought a bit of butter, But the butter was so bitter, So she bought some better butter, To make the bitter butter better"
+m=re.findall('[bB.*]', s)
+print(m)
+
+#2.
+import re
+s="A, very very; irregular_sentence"
+n=re.sub(r'[,;_ ]'," ",s)
+print("word sentence:",n)
+
+#1.
 emails=["zuck26@facebook.com","page33@google.com","jeff42@amazon.com"]
 def email_splitter(email):
     username=email.split('@')[0]

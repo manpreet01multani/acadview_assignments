@@ -27,8 +27,9 @@ frame=tk.Frame(root)
 frame.pack()
 button=tk.Button(frame,text="exit",width='20',command="exit")
 button.pack(side=tk.LEFT)
-label=tk.Label(frame,text='old text')
-label.config(text='new text')
+label=tk.Label(frame,text='message')
+label.config(text='hi ,i m here')
+label.pack()
 root.mainloop()
 
 #4.

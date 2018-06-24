@@ -35,8 +35,22 @@ c.sort()
 print (c)
 
 # 6 implement stack queue in list
+#stack using list.
 
+stack=["anju","anand","anjali"]
+stack.append("anuj")
+print(stack)
+print(stack.pop())
+print(stack)
 
+#queue using list.
+from collections import deque
+queue = deque(["ramu","namu","dhammu","jamun"])
+print(queue)
+queue.append("Akbar")
+print(queue)
+print(queue.popleft())
+print(queue)
 
 # 7 count odd even no. in list
 
